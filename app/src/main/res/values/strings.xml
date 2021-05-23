@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Psymon Says</string>
+    <string name="start_game">START GAME</string>
+    <string name="inquiries">Inquiries:</string>
+    <string name="_2021_rommultimedia">© 2021 ROMMultimedia</string>
+    <string name="developed_by">Developed by</string>
+    <string name="rom_multimedia">ROM Multimedia</string>
+    <string name="info_rommultimedia_com">info@rommultimedia.com</string>
+</resources>

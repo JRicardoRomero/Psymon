@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rommultimedia.psymon.MainActivity"
+    android:background="@drawable/bg2">
+
+    <ImageView
+        android:id="@+id/psymon_logo"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:background="@drawable/psymon_logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_score" />
+
+    <TextView
+        android:id="@+id/tit_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:shadowColor="@color/purple_200"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="10"
+        android:text="TOP SCORE"
+        android:textColor="@color/purple_500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/txt_score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/purple_500"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="10"
+        android:elevation="21dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/purple_200"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tit_score"
+        app:layout_constraintStart_toStartOf="@+id/tit_score"
+        app:layout_constraintTop_toTopOf="@+id/score_background"
+        app:layout_constraintBottom_toBottomOf="@id/score_background"/>
+
+    <ImageView
+        android:id="@+id/score_background"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shadow_circle"
+        android:elevation="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_score"
+        app:layout_constraintEnd_toEndOf="@+id/txt_score"
+        app:layout_constraintStart_toStartOf="@+id/txt_score"
+        app:layout_constraintTop_toBottomOf="@+id/tit_score"
+        app:srcCompat="@drawable/ic_baseline_brightness_1_24" />
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_game"
+        android:shadowColor="@color/black"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/psymon_logo" />
+
+    <ImageButton
+        android:id="@+id/btn_credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/logorom" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
